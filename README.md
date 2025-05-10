@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# React FCM Device Token Fetcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+이 프로젝트는 React를 이용하여 Firebase Cloud Messaging(FCM)의 디바이스 토큰을 가져오는 간단한 예제입니다.
 
-## Available Scripts
+## 기능
 
-In the project directory, you can run:
+- 사용자가 웹페이지에 접속하면 알림 권한을 요청합니다.
+- 사용자가 알림 권한을 허용하면, 브라우저 콘솔에 FCM 디바이스 토큰이 출력됩니다.
 
-### `npm start`
+## 사용 기술
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Firebase (Cloud Messaging)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 시작하기
 
-### `npm test`
+### 사전 준비
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Firebase 프로젝트 생성 및 FCM 설정
+- Firebase 웹 앱 등록 및 `firebase-messaging-sw.js` 파일 준비
 
-### `npm run build`
+### 환경 변수 설정 (firebase setting)
+- REACT_APPRIFEBASE_VAPID_KEY
+- REACT_APPFIREBASE_API_KEY
+- REACT_APPFIREBASE_DOMAIN
+- REACT_APPFIREBASE_PROJECTID
+- REACT_APPFIREBASE_STORAGE
+- REACT_APPFIREBASE_SENDERID
+- REACT_APPFIREBASE_APP_ID
+- .env 파일을 만들어서 추가하면 됨
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 설치
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/your-username/react-fcm-token-fetcher.git
+cd react-fcm-token-fetcher
+npm install
