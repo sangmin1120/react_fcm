@@ -27,7 +27,7 @@
 - REACT_APPFIREBASE_STORAGE
 - REACT_APPFIREBASE_SENDERID
 - REACT_APPFIREBASE_APP_ID
-- .env 파일을 만들어서 추가하면 됨
+- .env 파일을 만들어서 추가하면 됩니다.
 
 ### 설치
 
